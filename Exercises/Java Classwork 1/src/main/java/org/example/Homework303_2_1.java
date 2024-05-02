@@ -33,6 +33,7 @@ adds them together. Assign the sum to a variable. Print out the result.
 
                 int sum = i + j;
                 System.out.println("The sum is: " + sum);
+
                 return sum;
         }
 
@@ -54,6 +55,7 @@ adds them together. Assign the sum to a variable. Print out the result.
 
                 double sum = a + b;
                 System.out.println("The sum is: " + sum);
+
                 return sum;
         }
 
@@ -76,6 +78,7 @@ result. What variable type must the sum be?
 
                 double sum = o + p;
                 System.out.println("The sum is: " + sum);
+
                 return sum;
         }
 
@@ -105,6 +108,7 @@ Incorrect approximation, result made double from declaration.
                 }
 
                 System.out.println("The result is: " + result);
+
                 return result;
         }
 
@@ -120,10 +124,10 @@ result. Now, cast the result to an integer. Print out the result again.
 
                 System.out.println("\nThis is a very basic 'Double' calculator.");
 
-                System.out.print("Enter a Double value: ");
+                System.out.println("Enter a Double value: ");
                 double e = in.nextDouble();
 
-                System.out.print("Enter another Double value: ");
+                System.out.println("Enter another Double value: ");
                 double f = in.nextDouble();
 
                 if (e > f) {
