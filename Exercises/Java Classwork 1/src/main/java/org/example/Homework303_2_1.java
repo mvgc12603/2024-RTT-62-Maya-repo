@@ -34,7 +34,6 @@ adds them together. Assign the sum to a variable. Print out the result.
                 int sum = i + j;
                 System.out.println("The sum is: " + sum);
 
-
                 return sum;
         }
 
@@ -109,7 +108,7 @@ Incorrect approximation, result made double from declaration.
                 }
 
                 System.out.println("The result is: " + result);
-                in.close();
+
                 return result;
         }
 
@@ -177,7 +176,7 @@ result.
 
                 System.out.print("Circle perimeter is approx. " + 2*PI*r);
                 System.out.print("\nCircle area is approx. " + PI*(r*r));
-                in.close();
+
                 return PI;
         }
 
