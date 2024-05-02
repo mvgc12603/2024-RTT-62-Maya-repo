@@ -1,0 +1,59 @@
+
+import java.util.Scanner;
+public class Project2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		  Scanner input = new Scanner(System.in);
+		 
+		  double[] num = new double[10];
+		  double sum = sum(num);
+		  double mean = mean(sum);
+		  double standardDeviation = standardDeviation(mean,sum,num);
+		  display(mean, standardDeviation);
+
+	}
+	
+	public static double sum(double[] num)
+	{
+		Scanner input = new Scanner(System.in);
+		
+		 
+		System.out.println("Standard deviation program");
+		System.out.println("Please enter a number");
+		num[0] = input.nextDouble();
+		double sum=num[0];
+		for(int i=1; i<10;i++)
+		{
+			System.out.println("Please enter another number");
+			num[i]=input.nextDouble();
+			sum+=num[i];
+		}
+		return sum;
+	}
+	
+	public static double mean(double sum)
+	{
+		double mean = sum/10;
+		return mean;
+	}
+	
+	public static double standardDeviation(double mean, double sum, double[] num)
+	{
+		final int ARRAY_LENGTH=10;
+		double standardDev=0;
+		for (int i=0; i<10;i++)
+			standardDev += Math.pow(num[i]-mean, 2);
+		standardDev=Math.sqrt(standardDev/(ARRAY_LENGTH-1));
+		return standardDev;
+	}
+	
+	public static void display(double mean, double standardDeviation)
+	{
+		System.out.format("The mean is " + mean + ", " + "the standard deviation is %.5f", standardDeviation);
+		 System.out.println("\nStudent: Maya Chelle\n"
+		 		+ "Date: 02/20/2022");
+	}
+}
+	
