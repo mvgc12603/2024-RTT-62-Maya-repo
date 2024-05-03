@@ -5,9 +5,9 @@ import static java.lang.System.*;
 public class Homework303_2_3 {
 
     public static void main(String[] args) {
-        // Homework303_2_3.extraBitPractice();
-        // Homework303_2_3.leftShift();
-        // Homework303_2_3.bitWiseAnd();
+        Homework303_2_3.extraBitPractice();
+        Homework303_2_3.leftShift();
+        Homework303_2_3.bitWiseAnd();
         Homework303_2_3.increments();
     }
 
