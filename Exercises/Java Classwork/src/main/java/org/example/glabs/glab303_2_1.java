@@ -1,12 +1,12 @@
-package org.example;
+package org.example.glabs;
 
-public class GLAB303_2_1 {
+public class glab303_2_1 {
 
     public static void main (String[]args) {
-        GLAB303_2_1.BitwiseOperatorsDemo();
-        GLAB303_2_1.LogicalOperatorsDemo();
-        GLAB303_2_1.UnaryOperator();
-        GLAB303_2_1.AssignmentOperatorsDemo();
+        glab303_2_1.BitwiseOperatorsDemo();
+        glab303_2_1.LogicalOperatorsDemo();
+        glab303_2_1.UnaryOperator();
+        glab303_2_1.AssignmentOperatorsDemo();
     }
 
     public static void AssignmentOperatorsDemo() {

@@ -1,11 +1,11 @@
-package org.example;
+package org.example.glabs;
 import static java.lang.System.*;
 
-public class GLAB303_2_2 {
+public class glab303_2_2 {
 
         public static void main(String[] args) {
-            GLAB303_2_2.AutoTypeConversion();
-            GLAB303_2_2.ExplicitTest();
+            glab303_2_2.AutoTypeConversion();
+            glab303_2_2.ExplicitTest();
         }
 
     public static void AutoTypeConversion() {

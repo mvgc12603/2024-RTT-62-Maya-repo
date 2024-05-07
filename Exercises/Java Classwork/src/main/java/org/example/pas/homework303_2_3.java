@@ -1,14 +1,14 @@
-package org.example;
+package org.example.pas;
 
 import static java.lang.System.*;
 
-public class Homework303_2_3 {
+public class homework303_2_3 {
 
     public static void main(String[] args) {
-        Homework303_2_3.extraBitPractice();
-        Homework303_2_3.leftShift();
-        Homework303_2_3.bitWiseAnd();
-        Homework303_2_3.increments();
+        homework303_2_3.extraBitPractice();
+        homework303_2_3.leftShift();
+        homework303_2_3.bitWiseAnd();
+        homework303_2_3.increments();
     }
 
 

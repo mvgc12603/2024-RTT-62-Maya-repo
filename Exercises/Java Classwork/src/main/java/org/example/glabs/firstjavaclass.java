@@ -1,6 +1,6 @@
-package org.example;
+package org.example.glabs;
 
-    public class FirstJavaClass {
+    public class firstjavaclass {
         public static void main(String[] args) {
             byte num;   // This can hold whole number between -128 and 127.
             num = 113;
