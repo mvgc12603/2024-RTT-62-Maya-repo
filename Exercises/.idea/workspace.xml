@@ -5,64 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8ecc6a3-219c-454f-835b-ee0c620b36bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Java Classwork/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/Java Classwork 1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/main/java/org/example/glabs/firstjavaclass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/main/java/org/example/glabs/glab303_2_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/main/java/org/example/glabs/glab303_2_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/main/java/org/example/pas/homework303_2_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/main/java/org/example/pas/homework303_2_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/out/production/Java Classwork 1/org/example/FirstJavaClass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/out/production/Java Classwork 1/org/example/GLAB303_2_1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/out/production/Java Classwork 1/org/example/GLAB303_2_2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/out/production/Java Classwork 1/org/example/Homework303_2_1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/out/production/Java Classwork 1/org/example/Homework303_2_3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/src/out/production/Java Classwork 1/org/example/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/target/classes/org/example/FirstJavaClass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/target/classes/org/example/GLAB303_2_1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/target/classes/org/example/GLAB303_2_2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/target/classes/org/example/Homework303_2_1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Classwork/target/classes/org/example/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/Java Classwork 1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/main/java/org/example/FirstJavaClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/main/java/org/example/GLAB303_2_1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/main/java/org/example/GLAB303_2_2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/main/java/org/example/Homework303_2_1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/main/java/org/example/Homework303_2_3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/out/production/Java Classwork 1/org/example/FirstJavaClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/out/production/Java Classwork 1/org/example/GLAB303_2_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/out/production/Java Classwork 1/org/example/GLAB303_2_2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/out/production/Java Classwork 1/org/example/Homework303_2_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/out/production/Java Classwork 1/org/example/Homework303_2_3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/src/out/production/Java Classwork 1/org/example/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/target/classes/org/example/FirstJavaClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/target/classes/org/example/GLAB303_2_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/target/classes/org/example/GLAB303_2_2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/target/classes/org/example/Homework303_2_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java Classwork 1/target/classes/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
