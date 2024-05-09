@@ -2,13 +2,13 @@ package org.example.pas;
 
 import static java.lang.System.*;
 
-public class homework303_2_3 {
+public class pa303_2_3 {
 
     public static void main(String[] args) {
-        homework303_2_3.extraBitPractice();
-        homework303_2_3.leftShift();
-        homework303_2_3.bitWiseAnd();
-        homework303_2_3.increments();
+        pa303_2_3.extraBitPractice();
+        pa303_2_3.leftShift();
+        pa303_2_3.bitWiseAnd();
+        pa303_2_3.increments();
     }
 
 

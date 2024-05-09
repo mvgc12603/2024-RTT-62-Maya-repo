@@ -2,17 +2,17 @@ package org.example.pas;
 import java.util.Scanner; // import the Scanner class
 
 
-public class homework303_2_1 {
+public class pa303_2_1 {
         public static void main(String[] args) {
 
-                homework303_2_1.addInts();
-                homework303_2_1.addDouble();
-                homework303_2_1.addIntandDouble();
-                homework303_2_1.divideInt();
-                homework303_2_1.divideDouble();
-                homework303_2_1.divideIntCast();
-                homework303_2_1.constantCalc();
-                homework303_2_1.cafePrices();
+                pa303_2_1.addInts();
+                pa303_2_1.addDouble();
+                pa303_2_1.addIntandDouble();
+                pa303_2_1.divideInt();
+                pa303_2_1.divideDouble();
+                pa303_2_1.divideIntCast();
+                pa303_2_1.constantCalc();
+                pa303_2_1.cafePrices();
         }
 
 
