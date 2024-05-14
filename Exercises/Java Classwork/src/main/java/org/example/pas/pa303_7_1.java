@@ -1,5 +1,6 @@
 package org.example.pas;
 import java.math.*;
+import java.util.Scanner;
 
 public class pa303_7_1 {
     /*Task 1: Write a program that creates an array of integers with a length of 3. Assign
@@ -50,19 +51,41 @@ Then ask the user to enter the things and store them in the array you created. F
 print out the contents of the array.
      */
     public static void main(String[] args) {
-        int[] arr1 = {1,2,3};
-        for (int i=0; i<3; i++){
+        pa303_7_1.midElem();
+    }
+
+    public static void midElem() {
+        int[] arr1 = {1, 2, 3};
+        for (int i = 0; i < 3; i++) {
             System.out.print(arr1[i] + ", ");
         }
 
         int[] arr2 = {13, 5, 7, 68, 8, 9};
-        int arrMid = arr2[(int)Math.ceil(arr2.length/2)];
-        double underArrMid = arr2[(((arr2.length)-1)/2)];
+        int arrMid = arr2[(int) Math.ceil(arr2.length / 2)];
+        double underArrMid = arr2[(((arr2.length) - 1) / 2)];
 
-        if(arr2.length%2!=0) {
+        if (arr2.length % 2 != 0) {
             System.out.println("\n\nThe middle value is: " + arrMid);
-        }
-        else
-            System.out.println("\n\nThe middle value is: " + (double)(arrMid + underArrMid)/2);
+        } else
+            System.out.println("\n\nThe middle value is: " + (double) (arrMid + underArrMid) / 2);
     }
-}
+
+    /*Task 11: Write some Java code that asks the user how many favorite things they
+have. Based on their answer, you should create a String array of the correct size.
+Then ask the user to enter the things and store them in the array you created. Finally,
+print out the contents of the array.
+    public static void favStuff(){
+        Scanner in = new Scanner(System.in);
+        System.out.println("\n\nHow many things do you like? ");
+        int thingsNum = in.nextInt();
+        String[] favThings = new String[thingsNum];
+
+        System.out.print("List the things you like, separated by a space: ");
+
+        for(String favThing : favThings) {
+            favThing = in.nextLine();
+        }
+        for(int i=0;i<thingsNum;i++) {
+            System.out.println(favThings[i]+"\n");
+        }*/
+    }

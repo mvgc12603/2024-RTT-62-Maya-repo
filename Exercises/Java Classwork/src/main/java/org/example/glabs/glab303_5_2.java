@@ -6,7 +6,7 @@ public class glab303_5_2 {
     public static void main(String[] args) {
         glab303_5_2.highlow();
         glab303_5_2.SubtractionQuizLoop();
-        glab303_5_2.SentinelValuedemo();
+        glab303_5_2.calcTillZero();
     }
 
     /*Write a program that randomly generates an integer between 0 and
@@ -75,7 +75,7 @@ opportunity to play again.
         }
     }
 
-    public static void SentinelValuedemo() {
+    public static void calcTillZero() {
 // Create a Scanner
         Scanner input = new Scanner(System.in);
 // Read an initial data

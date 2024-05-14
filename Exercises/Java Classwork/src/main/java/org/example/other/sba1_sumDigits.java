@@ -1,4 +1,4 @@
-package org.example;
+package org.example.other;
 
 public class sba1_sumDigits {
     public static void main(String[] args) {

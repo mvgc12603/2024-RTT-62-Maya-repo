@@ -36,7 +36,6 @@ divisor for n1 and n2, until k is greater than n1 or n2.
 
     public static void Gcd() {
         Scanner in = new Scanner(System.in);
-
         System.out.print("Enter two positive numbers separated by a space: ");
         int num1 = in.nextInt();
         int num2 = in.nextInt();
