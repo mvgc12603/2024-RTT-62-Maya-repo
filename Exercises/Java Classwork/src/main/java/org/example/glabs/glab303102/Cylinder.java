@@ -17,7 +17,7 @@ public class Cylinder extends Circle {
         return 2.0 * Math.PI*super.radius*super.height;
     }
     @Override
-    public void displayshapName() {
+    public void displayshapeName() {
         System.out.println("Drawing a Cylinder for radius " +
                 super.radius);
     }
