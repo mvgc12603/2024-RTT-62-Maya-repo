@@ -1,4 +1,4 @@
-package org.example.glabs.glab303102;
+package org.example.glabs.glab303_10_2;
 
 public class Shape {
     private String color;
@@ -70,5 +70,4 @@ public class Shape {
         System.out.println("I am a Shape.");
     }
 }
-    }
-            }
+

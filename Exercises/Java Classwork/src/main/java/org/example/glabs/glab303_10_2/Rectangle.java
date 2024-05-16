@@ -1,4 +1,4 @@
-package org.example.glabs.glab303102;
+package org.example.glabs.glab303_10_2;
 
 public class Rectangle extends Shape {
     public Rectangle(String color) {
