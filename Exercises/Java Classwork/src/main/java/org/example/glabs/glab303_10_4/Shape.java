@@ -1,6 +1,6 @@
 package org.example.glabs.glab303_10_4;
 
-public abstract class Shape {
+ abstract class Shape {
     protected String color;
     protected double height; // To hold height.
     protected double width; //To hold width
@@ -25,7 +25,7 @@ public abstract class Shape {
     public String toString() {
         return "Shape[color=" + color + "]";
     }
-    public void displayShapeName()
+    public void displayshapName()
     {
         System.out.println("I am a Shape.");
     }

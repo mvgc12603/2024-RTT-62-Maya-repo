@@ -1,6 +1,6 @@
 package org.example.glabs.glab303_10_4;
 
-public class Circle extends Shape implements Movable {
+ class Circle extends Shape implements Movable {
     protected double radius;
     private int x, y; // x and y coordinates of the point
     private final double PI = Math.PI;
@@ -24,7 +24,7 @@ public class Circle extends Shape implements Movable {
         return area; //reference to parent class variable
     }
     @Override
-    public void displayShapeName() {
+    public void displayshapName() {
         System.out.println("Drawing a Circle of radius " + this.radius);
     }
     /** Returns a self-descriptive string */
