@@ -1,4 +1,5 @@
-package org.example.glabs.glab303_10_2;
+package org.example.glabs.glab303102;
+
 
 public class Circle extends Shape {
     protected double radius;
@@ -17,7 +18,7 @@ public class Circle extends Shape {
         return super.area; //reference to parent class variable
     }
     @Override
-    public void displayshapName() {
+    public void displayshapeName() {
         System.out.println("Drawing a Circle of radius " + this.radius);
     }
     /** Returns a self-descriptive string */

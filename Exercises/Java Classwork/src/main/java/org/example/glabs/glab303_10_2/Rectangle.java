@@ -1,4 +1,4 @@
-package org.example.glabs.glab303_10_2;
+package org.example.glabs.glab303102;
 
 public class Rectangle extends Shape {
     public Rectangle(String color) {
@@ -23,9 +23,10 @@ public class Rectangle extends Shape {
     public double perimeter() {
         super.area = super.width * super.height;
         return super.area; }
+
     //Overriding method of base class with different implementation
     @Override
-    public void displayshapName() {
+    public void displayshapeName() {
         System.out.println("I am a Rectangle" ); }
     /** Returns a self-descriptive string */
     @Override

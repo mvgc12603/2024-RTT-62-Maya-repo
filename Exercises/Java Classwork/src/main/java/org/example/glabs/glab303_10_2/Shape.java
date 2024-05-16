@@ -1,4 +1,4 @@
-package org.example.glabs.glab303_10_2;
+package org.example.glabs.glab303102;
 
 public class Shape {
     private String color;
@@ -62,13 +62,13 @@ public class Shape {
      */
     public double getArea() {
 // We have a problem here!// We need to return some value to compile the program.
-System.out.println("Shape unknown! Cannot compute area!");
-return 0;
-}
-public void displayshapeName()
-{
-System.out.println("I am a Shape.");
-}
-}
+        System.out.println("Shape unknown! Cannot compute area!");
+        return 0;
+    }
+    public void displayshapeName()
+    {
+        System.out.println("I am a Shape.");
     }
 }
+    }
+            }
