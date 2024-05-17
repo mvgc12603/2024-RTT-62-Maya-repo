@@ -1,6 +1,6 @@
 package org.example.glabs.glab303_10_4;
 
- abstract class Shape {
+public abstract class Shape {
     protected String color;
     protected double height; // To hold height.
     protected double width; //To hold width

@@ -5,7 +5,11 @@ import java.util.HashSet;
 public class HashSets {
 
     public static void main(String[] args) {
+
         HashSets.exampleOne();
+        HashSets.exampleTwo();
+        HashSets.exampleThree();
+        HashSets.exampleFour();
     }
 
     static void exampleOne() {
@@ -14,17 +18,20 @@ public class HashSets {
         evenNumber.add(2);
         evenNumber.add(4);
         evenNumber.add(6);
-        System.out.println("HashSet: " + evenNumber);
+        System.out.println("\nHashSet: " + evenNumber);
+
         HashSet<Integer> numbers = new HashSet<>();
 // Using addAll() method
-        System.out.println("Union is: " + numbers);
+        numbers.addAll(evenNumber);
+        numbers.add(5);
+        System.out.println("New HashSet: " + numbers);
     }
 
     static void exampleTwo() {
         HashSet<Integer> evenNumbers = new HashSet<>();
         evenNumbers.add(2);
         evenNumbers.add(4);
-        System.out.println("HashSet1: " + evenNumbers);
+        System.out.println("\nHashSet1: " + evenNumbers);
         HashSet<Integer> numbers = new HashSet<>();
         numbers.add(1);
         numbers.add(3);
@@ -38,7 +45,7 @@ public class HashSets {
         primeNumbers.add(2);
         primeNumbers.add(3);
         primeNumbers.add(5);
-        System.out.println("HashSet1: " + primeNumbers);
+        System.out.println("\nHashSet1: " + primeNumbers);
         HashSet<Integer> oddNumbers = new HashSet<>();
         oddNumbers.add(1);
         oddNumbers.add(3);
@@ -46,7 +53,7 @@ public class HashSets {
         System.out.println("HashSet2: " + oddNumbers);
 // Difference between HashSet1 and HashSet2
         primeNumbers.removeAll(oddNumbers);
-        System.out.println("Difference : " + primeNumbers);
+        System.out.println("Difference : " + primeNumbers + "\n");
     }
 
     static void exampleFour() {

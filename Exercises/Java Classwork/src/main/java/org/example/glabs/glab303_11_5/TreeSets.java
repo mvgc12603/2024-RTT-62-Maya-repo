@@ -5,6 +5,9 @@ import java.util.Iterator;
 
 public class TreeSets {
     public static void main(String[] args) {
+        TreeSets.TreeSetExampleOne();
+        TreeSets.TreeSetExampleTwo();
+        TreeSets.TreeSetExampleThree();
     }
 
     static void TreeSetExampleOne() {
@@ -29,7 +32,7 @@ public class TreeSets {
         numbers.add(2);
         numbers.add(5);
         numbers.add(6);
-        System.out.println("TreeSet: " + numbers);
+        System.out.println("\n\nTreeSet: " + numbers);
         // Using the remove() method
         boolean value1 = numbers.remove(5);
         System.out.println("Is 5 removed? " + value1);
@@ -43,10 +46,10 @@ public class TreeSets {
         numbers.add(2);
         numbers.add(5);
         numbers.add(6);
-        System.out.println("TreeSet: " + numbers);
+        System.out.println("\nTreeSet: " + numbers);
 // Using the first() method
         int first = numbers.first();
-        System.out.println("First Number: " + first);
+        System.out.println("First Number: " + first); //displays sorted by size ascending!
 // Using the last() method
         int last = numbers.last();
         System.out.println("Last Number: " + last);

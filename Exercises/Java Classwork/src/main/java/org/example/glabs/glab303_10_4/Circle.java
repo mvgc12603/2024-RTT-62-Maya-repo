@@ -1,6 +1,6 @@
 package org.example.glabs.glab303_10_4;
 
- class Circle extends Shape implements Movable {
+public class Circle extends Shape implements Movable {
     protected double radius;
     private int x, y; // x and y coordinates of the point
     private final double PI = Math.PI;
