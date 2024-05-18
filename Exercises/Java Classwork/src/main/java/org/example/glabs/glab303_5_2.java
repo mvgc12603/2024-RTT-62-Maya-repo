@@ -1,10 +1,9 @@
 package org.example.glabs;
-import java.math.*;
 import java.util.Scanner;
 
 public class glab303_5_2 {
     public static void main(String[] args) {
-        glab303_5_2.highlow();
+        glab303_5_2.HighLow();
         glab303_5_2.SubtractionQuizLoop();
         glab303_5_2.calcTillZero();
     }
@@ -18,7 +17,7 @@ low or too high.
 congratulatory message, and then provides the user with the
 opportunity to play again.
      */
-    public static void highlow() {
+    public static void HighLow() {
         Scanner in = new Scanner(System.in);
         int x = (int) (Math.random() * 101);
 

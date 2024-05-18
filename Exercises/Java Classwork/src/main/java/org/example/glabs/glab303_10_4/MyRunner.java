@@ -1,6 +1,6 @@
 package org.example.glabs.glab303_10_4;
 
-public class myRunner {
+public class MyRunner {
     public static void main(String[] args) {
         Circle c1 = new Circle(1, 2, 2);
         System.out.println("Area of Circle " + c1.getArea());
