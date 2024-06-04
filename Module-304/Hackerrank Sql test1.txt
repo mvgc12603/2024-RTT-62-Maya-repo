@@ -1,0 +1,159 @@
+Hackerrank SQL Test
+
+SELECT 
+    department.name AS Department, 
+    COUNT(course.id) AS CourseCount
+FROM department
+INNER JOIN course ON department.id = course.deptid
+GROUP BY department.id
+ORDER BY CourseCount, Department;
+
+
+------------------------------------------------------------------------------
+SELECT 
+    course.name AS Course, 
+    COUNT(studentid) AS StudentCount
+FROM Course
+INNER JOIN Studentcourse ON Course.id = StudentCourse.courseid
+GROUP BY Course.id
+ORDER BY StudentCount DESC, Course;
+
+------------------------------------------------------------------------------
+SELECT 
+    c.name
+FROM
+    course c
+WHERE
+    c.id NOT IN (
+        SELECT DISTINCT courseId
+        FROM facultycourse
+    )
+ORDER BY c.name;
+
+------------------------------------------------------------------------------
+SELECT 
+    c.name,
+    COUNT(DISTINCT sc.studentID) AS StudentNum
+FROM
+    course c,
+    studentCourse sc
+WHERE
+    c.id NOT IN (
+        SELECT DISTINCT courseId
+        FROM facultycourse
+    )
+    AND sc.courseid = c.id
+GROUP BY c.id
+ORDER BY StudentNum DESC, c.name;
+
+------------------------------------------------------------------------------
+SELECT
+    COUNT(DISTINCT sc.studentID) AS Students,
+      YEAR(sc.startDate) AS Year
+FROM studentcourse sc
+GROUP BY Year
+ORDER BY Year, Students DESC;
+
+------------------------------------------------------------------------------
+SELECT
+    sc.startDate,
+    COUNT(DISTINCT sc.studentID) AS Students
+FROM studentCourse sc
+WHERE MONTH(startdate) = 08 
+GROUP BY sc.startDate
+ORDER BY sc.startDate, Students;
+
+------------------------------------------------------------------------------
+SELECT 
+    s.firstname, 
+    s.lastname, 
+    COUNT(DISTINCT sc.courseID) AS CourseNum
+FROM 
+    Student s, 
+    StudentCourse sc,
+    Course c
+WHERE 
+    sc.studentID = s.id
+    AND s.MajorId = c.deptId
+    AND c.id = sc.courseId
+GROUP BY s.firstname, lastname
+ORDER BY CourseNum DESC, s.firstname, s.lastname;
+
+------------------------------------------------------------------------------
+SELECT 
+    s.firstname, 
+    s.lastname, 
+    FORMAT(AVG(sc.progress),1) AS Avg_Progress
+FROM 
+    student s,
+    studentcourse sc
+WHERE s.id = sc.studentId 
+GROUP BY s.id
+HAVING Avg_Progress < 50
+ORDER BY Avg_Progress DESC, s.firstname, s.lastname;
+
+------------------------------------------------------------------------------
+SELECT 
+    c.name, 
+    FORMAT(AVG(sc.progress),1) AS Avg_Progress
+FROM 
+    course c,
+    studentcourse sc
+WHERE c.id = sc.courseId 
+GROUP BY c.id
+ORDER BY Avg_Progress DESC, c.name;
+
+------------------------------------------------------------------------------
+SELECT 
+    c.name, 
+    FORMAT(AVG(sc.progress),1) AS Avg_Progress
+FROM 
+    course c,
+    studentcourse sc
+WHERE c.id = sc.courseId 
+GROUP BY c.id
+ORDER BY Avg_Progress DESC, c.name
+LIMIT 1;
+
+------------------------------------------------------------------------------
+SELECT 
+    f.firstname, 
+    f.lastname,
+    FORMAT(AVG(sc.progress),1) AS Avg_Progress
+FROM 
+    course c,
+    studentcourse sc,
+    faculty f,
+    facultyCourse fc
+WHERE sc.courseID = c.id 
+AND c. id = fc.courseId 
+AND fc.facultyid = f.id
+GROUP BY f.id
+ORDER BY Avg_Progress DESC, f.firstname, f.lastname;
+
+------------------------------------------------------------------------------
+SELECT 
+    s.firstname, 
+    s.lastname, 
+     CASE
+        WHEN MIN(progress) < 40 THEN 'F'
+        WHEN MIN(progress) < 50 THEN 'D'
+        WHEN MIN(progress) < 60 THEN 'C'
+        WHEN MIN(progress) < 70 THEN 'B'
+        ELSE 'A'
+    END AS MinGrade,
+    CASE
+        WHEN MAX(progress) < 40 THEN 'F'
+        WHEN MAX(progress) < 50 THEN 'D'
+        WHEN MAX(progress) < 60 THEN 'C'
+        WHEN MAX(progress) < 70 THEN 'B'
+        ELSE 'A'
+    END AS MaxGrade
+FROM 
+    Student s, 
+    StudentCourse sc
+WHERE 
+    sc.studentID = s.id
+GROUP BY s.id
+ORDER BY MinGrade DESC, MaxGrade DESC, s.firstname, s.lastname;
+
