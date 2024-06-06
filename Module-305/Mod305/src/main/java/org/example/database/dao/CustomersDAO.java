@@ -20,9 +20,18 @@ public class CustomersDAO {
         String hql = "SELECT c FROM Customers c where c.customerName = :customerName";
 
         TypedQuery<Customers> query = session.createQuery(hql,Customers.class);
-
+// SQL: SELECT * FROM customers c WHERE c.customer_name = "[INPUT]"
+// region Code Line Breakdown
+// Sets up the query. TypedQuery<InsertClassHere> will define the query type.
+// Session.createQuery() sets up the query but doesn't run it.
+// We insert the HQL into the first param, and the return type in the second param
+// endregion
 
         query.setParameter("customerName", customerName);
+// region Code Line Breakdown
+// Similar to prepared statement. Setting query :customerName (line 16)
+// To value passed into the method.
+// endregion
 
         List<Customers> result = query.getResultList();
 
@@ -38,12 +47,21 @@ public class CustomersDAO {
         Session session = factory.openSession();
 
 
-        String hql = "SELECT c FROM Customers c where c.contactFirstName = :contactFirstName";
+        String hql = "SELECT c FROM Customers c WHERE c.contactFirstName = :contactFirstName";
+        // SQL: SELECT * FROM customers c WHERE c.contact_firstname = "[INPUT]"
 
-        TypedQuery<Customers> query = session.createQuery(hql,Customers.class);
-
+        TypedQuery<Customers> query = session.createQuery(hql, Customers.class);
+// region Code Line Breakdown
+// Sets up the query. TypedQuery<InsertClassHere> will define the query type.
+// Session.createQuery() sets up the query but doesn't run it.
+// We insert the HQL into the first param, and the return type in the second param
+// endregion
 
         query.setParameter("contactFirstName", contactFirstName);
+// region Code Line Breakdown
+// Similar to prepared statement. Setting query :contactFirstName (line 16)
+// To value passed into the method.
+// endregion
 
         List<Customers> result = query.getResultList();
 
@@ -117,5 +135,7 @@ public class CustomersDAO {
         }
 
     }
+
+
 
 }

@@ -9,12 +9,13 @@ import lombok.*;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "products")
 
+
+@Table(name = "products")
 public class Products {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id // this is telling hibernate this column is the PK
+    @GeneratedValue(strategy = GenerationType.IDENTITY)  // this telling hibernate that the PK is auto increment
     @Column(name = "id")
     private Integer id;
 
