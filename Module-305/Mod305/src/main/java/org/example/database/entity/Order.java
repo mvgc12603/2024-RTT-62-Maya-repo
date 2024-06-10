@@ -1,30 +1,30 @@
 package org.example.database.entity;
 
-
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Date;
 
-
-@Getter
 @Setter
+@Getter
 @Entity
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-
-
 @Table(name = "orders")
-public class Orders {
+public class Order {
 
-
-    @Id // this is telling hibernate this column is the PK
-    @GeneratedValue(strategy = GenerationType.IDENTITY)  // this telling hibernate that the PK is auto increment
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
 
-    @Column(name = "customer_id")
+    @ToString.Exclude
+    @ManyToOne(fetch = FetchType.LAZY, optional = true)
+    @JoinColumn(name = "customer_id", nullable = true)
+    private Customer customer;
+
+    @Column(name = "customer_id", insertable = false, updatable = false)
     private Integer customerID;
 
     @Column(name = "order_date", columnDefinition = "DATE")
@@ -39,6 +39,7 @@ public class Orders {
     @Column(name = "status")
     private String status;
 
-    @Column(name = "comments")
+    @Column(name = "comments", columnDefinition = "TEXT")
     private String comments;
+
 }

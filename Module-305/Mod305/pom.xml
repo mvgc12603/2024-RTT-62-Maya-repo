@@ -28,7 +28,7 @@
             <version>6.5.2.Final</version>
         </dependency>
 
-
+        <!-- lombok dependency, creates getters/setters for you, reduces boilerplate -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

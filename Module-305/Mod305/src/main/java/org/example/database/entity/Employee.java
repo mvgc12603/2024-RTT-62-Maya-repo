@@ -2,27 +2,33 @@ package org.example.database.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 @Setter
 @Getter
 @Entity
+//ToString dynamically builds string consisting of all object (eg employee) variables (id, name, etc)
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
+
+
+
 @Table(name = "employees")
-public class Employees {
+public class Employee {
 
     @Id // this is telling hibernate this column is the PK
-    @GeneratedValue(strategy = GenerationType.IDENTITY)  // this telling hibernate that the PK is auto increment
+    @GeneratedValue(strategy = GenerationType.IDENTITY)  // this is telling hibernate that the PK is auto increment
     @Column(name = "id")
     private Integer id;
 
     @Column(name = "office_id")
     private Integer officeId;
 
-    @Column(name = "lastName")
+    @Column(name = "lastname")
     private String lastname;
 
-    @Column(name = "firstName")
+    @Column(name = "firstname")
     private String firstname;
 
     @Column(name = "extension")
@@ -42,4 +48,9 @@ public class Employees {
 
     @Column(name = "profile_image_url")
     private String profileImageUrl;
+
+    @ToString.Exclude
+    @OneToMany(mappedBy = "employee", fetch = FetchType.LAZY,
+            cascade = CascadeType.ALL)
+    private List<Customer> customers;
 }
