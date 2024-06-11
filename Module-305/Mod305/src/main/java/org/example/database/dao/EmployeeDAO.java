@@ -10,11 +10,10 @@ import org.hibernate.cfg.Configuration;
 import java.util.List;
 
 public class EmployeeDAO {
-
+    SessionFactory factory = new Configuration().configure().buildSessionFactory();
 
     public void insert(Employee employee) {
         // these 2 lines of code prepare the hibernate session for use
-        SessionFactory factory = new Configuration().configure().buildSessionFactory();
         Session session = factory.openSession();
 
         // begin the transaction
@@ -31,7 +30,6 @@ public class EmployeeDAO {
     }
 
     public void update(Employee employee) {
-        SessionFactory factory = new Configuration().configure().buildSessionFactory();
         Session session = factory.openSession();
         session.getTransaction().begin();
 
@@ -43,7 +41,6 @@ public class EmployeeDAO {
     }
 
     public void delete(Employee employee) {
-        SessionFactory factory = new Configuration().configure().buildSessionFactory();
         Session session = factory.openSession();
         session.getTransaction().begin();
 
@@ -57,7 +54,6 @@ public class EmployeeDAO {
 
     public Employee findById(Integer id) {
         // these 2 lines of code prepare the hibernate session for use
-        SessionFactory factory = new Configuration().configure().buildSessionFactory();
         Session session = factory.openSession();
 
         // JPA Query - the syntax is slightly different than regular SQL
@@ -90,7 +86,6 @@ public class EmployeeDAO {
 
     public List<Employee> findByFirstName(String firstName) {
         // these 2 lines of code prepare the hibernate session for use
-        SessionFactory factory = new Configuration().configure().buildSessionFactory();
         Session session = factory.openSession();
 
         // JPA Query - the syntax is slightly different than regular SQL
@@ -116,7 +111,6 @@ public class EmployeeDAO {
 
     public List<Employee> findByLastName(String lastName) {
         // these 2 lines of code prepare the hibernate session for use
-        SessionFactory factory = new Configuration().configure().buildSessionFactory();
         Session session = factory.openSession();
 
         // JPA Query - the syntax is slightly different than regular SQL

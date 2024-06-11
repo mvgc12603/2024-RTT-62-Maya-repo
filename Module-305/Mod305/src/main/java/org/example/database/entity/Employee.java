@@ -53,4 +53,14 @@ public class Employee {
     @OneToMany(mappedBy = "employee", fetch = FetchType.LAZY,
             cascade = CascadeType.ALL)
     private List<Customer> customers;
+
+    public Employee(Integer officeId, String firstname, String lastname,
+                    String email, String jobTitle, String extension) {
+        this.officeId = officeId;
+        this.lastname = lastname;
+        this.firstname = firstname;
+        this.email = email;
+        this.jobTitle = jobTitle;
+        this.extension = extension;
+    }
 }
