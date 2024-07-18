@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bd6d652d-28c4-4e3a-9edd-9557aff61e88" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Module-304/GLAB304.4.1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-304/GLAB304.5.1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-304/GLAB304.5.2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-304/Hackerrank Sql test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-304/MySQL_Exercises.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-304/SQL_Example.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/java/org/example/CustomerOrderMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/java/org/example/CustomerQueryDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/java/org/example/FirstHibernateDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/java/org/example/JDBCDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/java/org/example/ProductMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/java/org/example/database/dao/CustomerDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/java/org/example/database/dao/EmployeeDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/java/org/example/database/dao/OrderDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/java/org/example/database/dao/OrderDetailDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/java/org/example/database/dao/ProductDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/java/org/example/database/entity/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/java/org/example/database/entity/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/java/org/example/database/entity/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/java/org/example/database/entity/OrderDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/java/org/example/database/entity/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/test/java/org/example/database/dao/CustomerDAOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module-305/Mod305/src/test/java/org/example/database/dao/EmployeeDAOTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2iIac0PpHHwxB5tmJhHckqOQ4Cj" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mayav/Programming/Classes/PerScholasJavaFullstack/2024-RT-62-Classwork/Exercises/Module-307&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mayav\Programming\Classes\PerScholasJavaFullstack\2024-RT-62-Classwork\Exercises\Module-307\InclassCode\html" />
+      <recent name="C:\Users\Mayav\Programming\Classes\PerScholasJavaFullstack\2024-RT-62-Classwork\Exercises\Module-307\InclassCode\css" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd6d652d-28c4-4e3a-9edd-9557aff61e88" name="Changes" comment="" />
+      <created>1719180621221</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719180621221</updated>
+      <workItem from="1719180622278" duration="70000" />
+      <workItem from="1719181810185" duration="6000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

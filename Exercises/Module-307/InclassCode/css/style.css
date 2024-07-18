@@ -1,0 +1,24 @@
+.rainbow{
+  margin-left: 500px;
+}
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+h1 {
+  color:blue;
+  font-size: 50px;
+}
+
+/* this is a comment */
+h2 {
+  color:blue;
+  font-size: 45px;
+}
+
+h3 {
+  color:blue;
+  font-size: 40px;
+}
