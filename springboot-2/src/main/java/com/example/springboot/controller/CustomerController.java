@@ -45,7 +45,6 @@ public class CustomerController {
         log.info("customerId is: " + customerId);
         log.info("customer is: " + customer);
 
-
         return response;
     }
 

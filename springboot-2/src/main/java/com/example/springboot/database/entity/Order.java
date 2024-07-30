@@ -5,20 +5,19 @@ import lombok.*;
 
 import java.util.Date;
 import java.util.List;
-
 @Getter
 @Setter
-@Entity
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 @Table(name = "orders")
 public class Order {
-    @Id // this is telling hibernate this column is the PK
-    @GeneratedValue(strategy = GenerationType.IDENTITY)  // this telling hibernate that the PK is auto increment
-    @Column(name = "id")
-    private Integer id;
-    
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
     @ToString.Exclude
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "customer_id", nullable = false)
@@ -28,25 +27,22 @@ public class Order {
     @OneToMany(mappedBy = "order", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<OrderDetail> orderDetails;
 
+
     @Column(name = "customer_id", insertable = false, updatable = false)
     private int customerId;
 
-    @Column(name = "order_date", nullable = false)
+    @Column(name = "order_date")
     @Temporal(TemporalType.DATE)
     private Date orderDate;
 
-    @Column(name = "required_date", nullable = false)
+    @Column(name = "required_date")
     @Temporal(TemporalType.DATE)
     private Date requiredDate;
 
-    @Column(name = "shipped_date")
-    @Temporal(TemporalType.DATE)
-    private Date shippedDate;
-
-    @Column(name = "status", nullable = false)
+    @Column(name = "status")
     private String status;
 
-    @Column(name = "comments", length = 65535, columnDefinition = "text")
+    @Column(name = "comments", columnDefinition = "TEXT")
     private String comments;
 
 }

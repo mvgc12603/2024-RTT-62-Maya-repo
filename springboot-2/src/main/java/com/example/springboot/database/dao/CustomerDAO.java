@@ -11,4 +11,6 @@ public interface CustomerDAO extends JpaRepository<Customer, Long> {
 
     @Query("select c from Customer c where c.salesRepEmployeeId = :employeeId")
     List<Customer> findByEmployeeId(Integer employeeId);
+
+    List<Customer> findBySalesRepEmployeeId(Integer id);
 }

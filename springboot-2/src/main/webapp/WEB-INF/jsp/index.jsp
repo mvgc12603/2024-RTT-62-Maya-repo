@@ -1,5 +1,5 @@
 <jsp:include page="include/header.jsp" />
-
+<div class="indexPage">
     <h1>This is my first JSP page!</h1>
     <h2>${message}</h2>
 
@@ -9,5 +9,5 @@
         <tr><td>name</td><td>${product.productName}</td></tr>
         <tr><td>description</td><td>${product.productDescription}</td></tr>
     </table>
-
+</div>
 <jsp:include page="include/footer.jsp" />

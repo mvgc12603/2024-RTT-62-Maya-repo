@@ -2,6 +2,7 @@ package com.example.springboot.database.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import java.util.List;
 
 @Setter
 @Getter
@@ -11,40 +12,47 @@ import lombok.*;
 @AllArgsConstructor
 @Table(name = "employees")
 public class Employee {
-    @Id // this is telling hibernate this column is the PK
-    @GeneratedValue(strategy = GenerationType.IDENTITY)  // this telling hibernate that the PK is auto increment
-    @Column(name = "id")
-    private Integer id;
+        @Id // this is telling hibernate this column is the PK
+        @GeneratedValue(strategy = GenerationType.IDENTITY)  // this telling hibernate that the PK is auto increment
+        @Column(name = "id")
+        private Integer id;
 
-    @ToString.Exclude
-    @ManyToOne(fetch = FetchType.LAZY, optional = true)
-    @JoinColumn(name = "office_id", nullable = true)
-    private Office office;
+        // this essentially a customerDAO.findByEmployeeId(123)
+        // select c.* from customers c, employees e where c.sales_rep_employee_id = e.id and c.sales_rep_employee_id = <123>;
+        @ToString.Exclude
+        @OneToMany(mappedBy = "employee", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+        private List<Customer> customers;
 
-    @Column(name = "office_id", insertable = false, updatable = false)
-    private Integer officeId;
+        @ToString.Exclude
+        @ManyToOne(fetch = FetchType.LAZY, optional = true)
+        @JoinColumn(name = "office_id", nullable = true)
+        private Office office;
 
-    @Column(name = "lastname")
-    private String lastname;
+        // in essence this field is a read only field and the the database will ignore it on update or insert
+        @Column(name = "office_id", insertable = false, updatable = false)
+        private Integer officeId;
 
-    @Column(name = "firstname")
-    private String firstname;
+        @Column(name = "lastname")
+        private String lastname;
 
-    @Column(name = "extension")
-    private String extension;
+        @Column(name = "firstname")
+        private String firstname;
 
-    @Column(name = "email")
-    private String email;
+        @Column(name = "extension")
+        private String extension;
 
-    @Column(name = "reports_to")
-    private Integer reportsTo;
+        @Column(name = "email")
+        private String email;
 
-    @Column(name = "job_title")
-    private String jobTitle;
+        @Column(name = "reports_to")
+        private Integer reportsTo;
 
-    @Column(name = "vacation_hours")
-    private Integer vacationHours;
+        @Column(name = "job_title")
+        private String jobTitle;
 
-    @Column(name = "profile_image_url")
-    private String profileImageUrl;
-}
+        @Column(name = "vacation_hours")
+        private Integer vacationHours;
+
+        @Column(name = "profile_image_url")
+        private String profileImageUrl;
+    }

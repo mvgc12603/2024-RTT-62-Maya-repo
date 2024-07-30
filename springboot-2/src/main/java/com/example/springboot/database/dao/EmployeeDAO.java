@@ -12,4 +12,7 @@ public interface EmployeeDAO extends JpaRepository<Employee, Long> {
     // this is a JPA query just like we did in the hibernate module
     @Query("select e from Employee e where e.firstname like concat('%', :name, '%') or e.lastname like concat('%', :name, '%')")
     List<Employee> findByName(String name);
+
+    //select * from employee where lower(email) = lower(:email)
+    Employee findByEmailIgnoreCase(String email);
 }

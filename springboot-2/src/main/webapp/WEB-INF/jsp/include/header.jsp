@@ -14,33 +14,48 @@
     <link rel="stylesheet" href="/assets/css/global.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-        <a class="navbar-brand" href="#">
-            <img src="../../../assets/img/classic.png" style="width: 100px; padding-left: 10px;"/>  </a>
-    <div class="container-fluid justify-content-center">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                ria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+        <img src="../../../assets/img/classic.png" style="width: 100px; padding-left: 10px;"/> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container-fluid justify-content-center" data-bs-target="#navbarSupportedContent"
+         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link text-center" aria-current="page" href="/">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-center" href="/search">Find Products</a>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item text-center" href="/product/productSearch">Find Product</a>
+                        <a class="dropdown-item text-center" href="/product/create">Create Product</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-center" href="/employee/search">Find Employees</a>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Employees</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item text-center" href="/employee/employeeSearch">Find Employees</a>
+                        <a class="dropdown-item text-center" href="/employee/create">Create Employee</a>
+                    </div>
                 </li>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-center" href="/employee/create">Create Employee</a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link text-center" href="/customer/create">Create Customer</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="/fileUpload">Upload File</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/account/create-account">Create Account</a>
                 </li>
             </ul>
         </div>

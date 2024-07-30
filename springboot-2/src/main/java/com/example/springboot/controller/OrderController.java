@@ -6,7 +6,6 @@ import com.example.springboot.database.dao.ProductDAO;
 import com.example.springboot.database.entity.Order;
 
 import com.example.springboot.database.entity.OrderDetail;
-import com.example.springboot.database.entity.Product;
 import com.example.springboot.form.OrderDetailsBean;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +18,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Slf4j
 @Controller
@@ -34,11 +34,12 @@ public class OrderController {
     private ProductDAO productDAO;
 
     @GetMapping("/list")
-    public ModelAndView employeeDeatails(@RequestParam(required = false) String customerId) {
+    public ModelAndView employeeDetails(@RequestParam(required = false) String customerId) {
 
-        ModelAndView response = new ModelAndView("orderList");
+        ModelAndView response = new ModelAndView("order/orderList");
 
         List<Order> orders = orderDAO.findByCustomerId(Integer.valueOf(customerId));
+
         response.addObject("orders", orders);
 
         return response;
@@ -47,7 +48,7 @@ public class OrderController {
     @GetMapping("/detail")
     public ModelAndView orderDetail(@RequestParam(required = false) String orderId) {
 
-        ModelAndView response = new ModelAndView("orderDetails");
+        ModelAndView response = new ModelAndView("order/orderDetails");
 
         List<OrderDetail> orderDetails = orderDetailDAO.findByOrderId(Integer.valueOf(orderId));
 
@@ -85,4 +86,17 @@ public class OrderController {
 
         return response;
     }
+
+
+    @GetMapping("/order/orderdetail")
+    public ModelAndView orderDetail(@RequestParam Integer orderId) {
+        ModelAndView response = new ModelAndView("order/orderdetail");
+
+        List<Map<String, Object>> orderDetails = orderDAO.getOrderDetails(orderId);
+        response.addObject("orderDetails", orderDetails);
+
+        return response;
+    }
+
+
 }
