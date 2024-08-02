@@ -88,8 +88,8 @@ public class EmployeeController {
                 CreateEmployeeFormBean form = new CreateEmployeeFormBean();
                 form.setEmployeeId(employee.getId());
                 form.setEmail(employee.getEmail());
-                form.setFirstname(employee.getFirstname());
-                form.setLastname(employee.getLastname());
+                form.setFirstName(employee.getFirstname());
+                form.setLastName(employee.getLastname());
                 form.setReportsTo(employee.getReportsTo());
                 form.setOfficeId(employee.getOffice().getId());
 
@@ -159,8 +159,8 @@ public class EmployeeController {
                 employee = new Employee();
             }
             employee.setEmail(form.getEmail());
-            employee.setFirstname(form.getFirstname());
-            employee.setLastname(form.getLastname());
+            employee.setFirstname(form.getFirstName());
+            employee.setLastname(form.getLastName());
             employee.setReportsTo(form.getReportsTo());
             employee.setExtension("x123");
             employee.setJobTitle("Job Title");

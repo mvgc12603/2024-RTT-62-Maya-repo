@@ -30,13 +30,11 @@ import org.hibernate.validator.constraints.Length;
         @Pattern(regexp="[a-zA-Z]+", message = "Firstname must have characters only.")
         @Length(max = 50, message = "Firstname must be less than 50 characters")
         @NotEmpty(message = "Firstname is required.")
-        private String firstname;
+        private String firstName;
 
         @Length(max = 50, message = "Lastname must be less than 50 characters")
         @NotEmpty(message = "Lastname is required.")
-        private String lastname;
-
-
+        private String lastName;
 
         private Integer officeId;
 

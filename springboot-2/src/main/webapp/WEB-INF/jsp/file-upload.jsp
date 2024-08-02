@@ -10,7 +10,7 @@
 </section>
 
 <section>
-    <form method="post" action="/fileUpload" enctype="multipart/form-data">
+    <form method="post" action="/file-upload" enctype="multipart/form-data">
         <input type="hidden" name="employeeId" value ="${employeeId}"/>
         <div class="row align-items-center justify-content-center" style="padding: 2em 0 0 15em">
             <div class="col-4"><input type="file" id="file" name="file" class="form-control"></div>

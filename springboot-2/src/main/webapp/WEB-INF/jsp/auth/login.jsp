@@ -1,11 +1,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<jsp:include page="include/header.jsp"/>
+
+<jsp:include page="../include/header.jsp"/>
 
 <!-- a page header -->
 <section style="background-color:gray">
     <div class="container">
         <div class="row pt-5 pb-5">
-            <h1 class="text-center">Create Account</h1>
+            <h1 class="text-center">Enter Credentials</h1>
         </div>
     </div>
 </section>
@@ -13,18 +14,26 @@
 
 <section>
     <div class="container">
+        <c:if test="${param['error'] eq ''}">
+            <div class="row pt-5 justify-content-center">
+                <div class="col-6">
+                    <div class="alert alert-danger" role="alert">Invalid Username or Password</div>
+                </div>
+            </div>
+        </c:if>
+
+
         <div class="row pt-5 ">
             <div class="col-12">
-                <form action="/account/create-account" method="post">
+                <form action="/account/loginProcessingURL" method="post">
 
                     <!-- email input -->
                     <div class="row align-items-center justify-content-center">
                         <div class="col-2">
-                            <label for="emailId" class="col-form-label">Email</label>
+                            <label for="usernameId" class="col-form-label">Email</label>
                         </div>
                         <div class="col-4">
-                            <input type="text" id="emailId" name="email"
-                                   class="form-control <c:if test="${bindingResult.hasFieldErrors('email')}">is-invalid</c:if>"
+                            <input type="text" id="usernameId" name="username" class="form-control <c:if test="${bindingResult.hasFieldErrors('email')}">is-invalid</c:if>"
                                    value="${form.email}">
                         </div>
                     </div>
@@ -47,7 +56,7 @@
                             <label for="passwordId" class="col-form-label">Password</label>
                         </div>
                         <div class="col-4">
-                            <input type="text"
+                            <input type="password"
                                    id="passwordId"
                                    name="password"
                                    class="form-control <c:if test="${bindingResult.hasFieldErrors('password')}">is-invalid</c:if>"
@@ -78,4 +87,4 @@
 </section>
 
 
-<jsp:include page="include/footer.jsp"/>
+<jsp:include page="../include/footer.jsp"/>

@@ -52,16 +52,16 @@ public class IndexController {
     }
 
 
-    @GetMapping("/fileUpload")
+    @GetMapping("/file-upload")
     public ModelAndView fileUpload(@RequestParam(required = false)Integer employeeId) {
         // this page is for another page of the website which is express as "/page-url"
-        ModelAndView response = new ModelAndView("fileUpload");
+        ModelAndView response = new ModelAndView("file-upload");
         response.addObject("employeeId", employeeId);
 
         return response;
     }
 
-    @PostMapping("/fileUpload")
+    @PostMapping("/file-upload")
     public ModelAndView fileUploadSubmit(@RequestParam MultipartFile file, @RequestParam Integer employeeId) {
         // this page is for another page of the website which is express as "/page-url"
         ModelAndView modelAndView = new ModelAndView("redirect:/employee/detail?employeeId=" + employeeId);
