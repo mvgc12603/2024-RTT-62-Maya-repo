@@ -2,6 +2,7 @@ package com.example.springboot.config;
 
 import org.springframework.context.annotation.*;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.*;
 import org.springframework.security.config.annotation.web.builders.*;
@@ -20,8 +21,8 @@ public class SpringSecurity {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
-        // boiler plate code to protect a common hack
-        http.csrf(csrf -> csrf.disable());
+        // boilerplate code to protect a common hack
+        http.csrf(Customizer.withDefaults());
 
         // this section says allow all pages EXCEPT the ones that are in the AntPathRequestMatcher
         // anything in AntPathRequestMatcher will require the user to be authenticated

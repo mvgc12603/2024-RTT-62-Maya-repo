@@ -42,7 +42,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         boolean credentialsNonExpired = true;
         boolean accountNonLocked = true;
 
-        // im using the user object from the database to get the user roles
+        //  using the user object from the database to get the user roles
         List<UserRole> userRoles = userRoleDao.findByUserId(user.getId());
         // passing the user roles to create the granted authorities
         Collection<? extends GrantedAuthority> authorities = buildGrantAuthorities(userRoles);
@@ -50,7 +50,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         // this User object is part of Spring Security
         // because both objets are named User, we have to use the full path to the object
         UserDetails userDetails = new org.springframework.security.core.userdetails.User(
-                user.getEmail(),  // this paramter is the username, in our case the user from the database
+                user.getEmail(),  // this parameter is the username, in our case the user from the database
                 user.getPassword(), // this is the users encrypted password from the database
                 accountIsEnabled, // is this account enabled, if false, then spring security will deny access
                 accountNonExpired,

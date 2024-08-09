@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<jsp:include page="../include/header.jsp" />
+<jsp:include page="../include/header.jsp"/>
 
 <!-- a page header -->
 <section style="background-color:gray">
@@ -17,14 +17,15 @@
         <div class="row pt-5 ">
             <div class="col-12">
                 <form action="/account/create-account" method="post">
-
+                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                     <!-- email input -->
                     <div class="row align-items-center justify-content-center">
                         <div class="col-2">
                             <label for="emailId" class="col-form-label">Email</label>
                         </div>
                         <div class="col-4">
-                            <input type="text" id="emailId" name="email" class="form-control <c:if test="${bindingResult.hasFieldErrors('email')}">is-invalid</c:if>" value="${form.email}">
+                            <input type="text" id="emailId" name="email" class="form-control
+                    <c:if test="${bindingResult.hasFieldErrors('email')}">is-invalid</c:if>" value="${form.email}">
                         </div>
                     </div>
                     <c:if test="${bindingResult.hasFieldErrors('email')}">
@@ -77,4 +78,4 @@
 </section>
 
 
-<jsp:include page="../include/footer.jsp" />
+<jsp:include page="../include/footer.jsp"/>

@@ -8,6 +8,10 @@ import lombok.extern.slf4j.*;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.stereotype.*;
 
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+
 @Slf4j
 @Component
 public class EmployeeService {
@@ -21,6 +25,8 @@ public class EmployeeService {
 
     public Employee createEmployee(CreateEmployeeFormBean form) {
         // log out the incoming variables that are in the CreateEmployeeFormBean
+        Integer employeeId = form.getEmployeeId();
+        log.info("submit employeeId: " + employeeId);
         log.debug(form.toString());
 
         // first, I am going to take a shot at looking up the record in the database based on the incoming employeeId
@@ -40,11 +46,11 @@ public class EmployeeService {
         employee.setJobTitle("Job Title");
 
         Office office = officeDao.findById(form.getOfficeId());
-        // this wont work because its set to insertable = false and updateable = false
+        // this won't work because its set to insertable = false and updatable = false
         //employee.setOfficeId(1);
         employee.setOffice(office);
 
-        // when we save to the data base it will auto increment to give us a new id
+        // when we save to the database it will auto increment to give us a new id
         // the new ID is available in the return from the save method.
         // basically returns the same object .. after its been inserted into the database
         employee = employeeDao.save(employee);

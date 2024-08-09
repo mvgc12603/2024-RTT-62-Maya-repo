@@ -18,7 +18,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
-        <img src="../../../assets/img/classic.png" style="width: 100px; padding-left: 10px;"/> </a>
+        <img src="../../../assets/img/matchbox.png" style="width: 100px; padding-left: 10px;"/> </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -64,7 +64,10 @@
                 </sec:authorize>
                 <sec:authorize access="isAuthenticated()">
                     <li class="nav-item">
-                        <a class="nav-link" href="/account/logout">Logout</a>
+                        <form action="/account/logout" method="post">
+                            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                            <input type="submit" value="Log Out"/>
+                        </form>
                     </li>
                     <li class="nav-item">
                         <span class="nav-link"><sec:authentication property="name"/></span>

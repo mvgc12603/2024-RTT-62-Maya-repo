@@ -26,6 +26,7 @@
         <div class="row pt-5 ">
             <div class="col-12">
                 <form action="/account/loginProcessingURL" method="post">
+                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 
                     <!-- email input -->
                     <div class="row align-items-center justify-content-center">
